@@ -43,6 +43,7 @@ function fire() { if (mode !== 'playing')
     else {
         level++;
         mode = 'result';
+        shots = MISSIONS[level].shots;
         hud();
         const next = MISSIONS[level];
         panel('TARGET ELIMINATED', 'CLEAN<br><em>SHOT.</em>', `Next: ${next.name}. ${next.range}m out. ${next.wind === 0 ? 'No wind.' : `Wind ${Math.abs(next.wind).toFixed(1)} m/s ${next.wind > 0 ? 'right' : 'left'}.`} Three rounds.`, `NEXT MISSION ${String(level + 1).padStart(2, '0')}`);
