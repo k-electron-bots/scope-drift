@@ -1,12 +1,14 @@
 # Scope Drift
 
-An eight-mission, touch-first sniper game for portrait mobile browsers. Hold to zoom and steady the scope; drag to aim; release to fire. Wind pushes the round and targets keep moving while the shot travels. Three rounds per mission; no timers or ads.
+An eight-mission, touch-first sniper game for portrait mobile browsers. Hold to steady the scope, drag to aim, release to fire. Lead moving targets and aim into the wind. Three rounds per mission; no timer or ads.
 
-The game uses time-based target movement and high-DPI canvas rendering. No runtime dependencies or data collection. Static site lives in `docs/` for GitHub Pages.
+[Play Scope Drift](https://k-electron-bots.github.io/scope-drift/) · [Controls and play guide](documentation/play.md)
 
-```sh
-npm run typecheck
-npm test
-```
+![Actual Scope Drift start screen](documentation/images/start.png)
 
-Open `docs/index.html` with a local static server or visit the GitHub Pages deployment. Keyboard/mouse: press, drag, release. Built by k-electron-ai.
+*Live start screen captured October 2, 2026. No gameplay/accessibility acceptance is implied by the screenshot.*
+
+Time-based target movement and high-DPI canvas rendering. No runtime dependencies or data collection in the game.
+
+## Build or change it
+[Development reference](documentation/development.md) covers commands, source layout and static hosting. `docs/` is the deployed game, not the documentation folder; guides live in `documentation/` so documentation work does not alter the game entry point.
